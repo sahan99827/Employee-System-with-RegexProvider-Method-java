@@ -10,7 +10,7 @@ public class CommonDao{
         ResultSet rslt =null;
         try{
 
-        Connection dbcon = DriverManager.getConnection("jdbc:mysql://localhost/harvest","Us2","asdf@123");
+        Connection dbcon = DriverManager.getConnection("jdbc:mysql://localhost/harvestsuper","Us2","asdf@123");
         Statement stm = dbcon.createStatement();
 
         rslt = stm.executeQuery(qry);
@@ -32,7 +32,7 @@ public class CommonDao{
         try{
             
 
-            Connection dbcon = DriverManager.getConnection("jdbc:mysql://localhost/harvest","Us2","asdf@123");
+            Connection dbcon = DriverManager.getConnection("jdbc:mysql://localhost/harvestsuper","Us2","asdf@123");
             Statement stm = dbcon.createStatement();
             int rows= stm.executeUpdate(qry);
             if (rows !=0) msg ="1";
